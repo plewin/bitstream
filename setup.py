@@ -13,13 +13,6 @@ import os
 import os.path
 import sys
 import tempfile
-
-# Pip Package Manager
-try:
-    import pip
-except ImportError:
-    error = "pip is not installed, refer to <{url}> for instructions."
-    raise ImportError(error.format(url="http://pip.readthedocs.org"))
 import pkg_resources
 import setuptools
 
