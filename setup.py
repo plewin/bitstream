@@ -16,15 +16,6 @@ import tempfile
 import pkg_resources
 import setuptools
 
-# NumPy 
-try:
-    pkg_resources.require("numpy")
-    import numpy
-except pkg_resources.DistributionNotFound:
-    error  = "numpy not available. Try the command 'pip install -m numpy' "
-    error += "or use a pre-built package for your operating system."
-    raise ImportError(error)
-
 
 # Metadata
 # ------------------------------------------------------------------------------
